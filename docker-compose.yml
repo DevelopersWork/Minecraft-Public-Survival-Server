@@ -1,0 +1,17 @@
+version:  '3'
+services:
+  server:
+    image: mincraft-public-server
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    volumes: 
+      - .:/server
+    working_dir: /server
+    ports:
+      - '25565:25565'
+    # command: >
+    #   /bin/sh -c "npm install && 
+    #     while sleep 60000; do :; done"
+    command: >
+      /bin/sh -c "while sleep 60000; do :; done"
