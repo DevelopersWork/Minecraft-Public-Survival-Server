@@ -3,6 +3,7 @@ cache
 
 # Log files
 *.log
+logs
 
 # db files
 *.db*
