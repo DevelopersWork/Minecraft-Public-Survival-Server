@@ -8,10 +8,10 @@ logs
 # db files
 *.db*
 
-# ignore worlds
+# worlds
 /world*
 
-# ignore player information
+# player information
 banned*.json
 ops.json
 usercache.json

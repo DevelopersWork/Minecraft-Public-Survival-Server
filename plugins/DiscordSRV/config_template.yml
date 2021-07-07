@@ -5,7 +5,7 @@
 ConfigVersion: 1.23.0
 
 # Bot token; don't know what this is? Look at the video on the plugin page for instructions
-BotToken: "BOTTOKEN"
+BotToken: "${BOTTOKEN}"
 
 # Channel links from game to Discord
 # syntax is Channels: {"in-game channel name from Minecraft": "numerical channel ID from Discord", "another in-game channel name from Minecraft": "another numerical channel ID from Discord"}
@@ -24,13 +24,13 @@ BotToken: "BOTTOKEN"
 # for /discord broadcast: broadcasts (unless specified in the command)
 #
 # The first part of channel pairs is not the Discord channel name!
-Channels: {"global": "000000000000000000"}
+Channels: ${Channels}
 
 # Console channel numerical ID (NOT NAME), leave blank to disable the console channel all together
 DiscordConsoleChannelId: "000000000000000000"
 
 # Invitation link shown to players when using /discord and on the message shown to unlinked players when linking is enforced
-DiscordInviteLink: "https://discord.gg/changethisintheconfig.yml"
+DiscordInviteLink: "https://discord.gg/mhdDvXDkVn"
 
 # Debug options, don't touch unless needed
 #
@@ -83,8 +83,8 @@ UseModernPaperChatEvent: false
 #
 # DiscordGameStatus: Text to display. Can be a single value e.g. "Minecraft", or multiple values e.g. ["Minecraft", "yourip.changeme.com"]
 # StatusUpdateRateInMinutes: How frequently to cycle the status
-DiscordGameStatus: "Minecraft"
-StatusUpdateRateInMinutes: 2
+DiscordGameStatus: ["Crafters@Work","Developers@Work SMP"]
+StatusUpdateRateInMinutes: 15
 
 # Chat channel information
 # The chat channel is the text channel that all messages in-game will be sent to and all messages sent

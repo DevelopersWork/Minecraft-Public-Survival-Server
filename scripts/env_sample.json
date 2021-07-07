@@ -1,0 +1,14 @@
+[
+    {
+        "name": "PLUGIN NAME",
+        "files": [
+            {
+                "name": "FILE NAME",
+                "extension": "EXTENSION OF THE FILE",
+                "values": {
+                    "NAME OF THE VALUE": "VALUE TO BE REPLACED"
+                }
+            }
+        ]
+    }
+]
