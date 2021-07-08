@@ -7,6 +7,9 @@ services:
       dockerfile: ./Dockerfile
     volumes: 
       - .:/server
+      - /server/world
+      - /server/world_nether
+      - /server/world_the_end
     working_dir: /server
     ports:
       - '25565:25565'

@@ -26,7 +26,7 @@ settings:
 # -- 'permission' What is the permission? (By default, it's bukkit's default)
 global-broadcasts:
   enabled: true
-  async: false
+  async: true
   use-permission-for-broadcasts: false
   permission: bukkit.broadcast
 
@@ -49,8 +49,8 @@ lag-spike-helper:
 # -- 'transfer-limit' How many transfers per check interval until the hopper should be disabled
 # -- 'check-interval' In seconds, on what interval should the transfer limit be reset
 hopper-limiter:
-  enabled: false
-  transfer-limit: 5
+  enabled: true
+  transfer-limit: 1
   check-interval: 1
 
 #Meters your ram usage. If it goes above 'limit', run 'commands:'
@@ -162,7 +162,7 @@ config-updater:
 # -- 'check-radius' is the radius clearlag will check for nearby entities
 # -- 'max-mobs' is how many entities may be in the radius before the spawning is blocked
 mobegg-limiter:
-  enabled: false
+  enabled: true
   check-radius: 8
   max-mobs: 5
 
@@ -206,8 +206,8 @@ tnt-minecart:
 #This option reduces global dispenser fire rate
 # -- 'time' is in milliseconds
 dispenser-reducer:
-  enabled: false
-  time: 100
+  enabled: true
+  time: 2000
 
 #This option reduces the explosions of mass amounts of tnt, and reduces tnt lag
 # -- 'check-radius' is the radius clearlag will check for primed TNT
@@ -220,7 +220,7 @@ tnt-reducer:
 #This option reduces fire spread rate
 # -- 'time' is in milliseconds
 firespread-reducer:
-  enabled: false
+  enabled: true
   time: 2000
 
 #How many entities should one chunk be allowed to hold?
@@ -294,15 +294,15 @@ spawn-limiter:
 # -- 'recover-broadcast-message' specifies which message should be broadcasted when TPS recovers
 # -- 'broadcast-enabled' defines whether or not tps-meter should broadcast
 tps-meter:
-  enabled: false
+  enabled: true
   trigger-broadcast-message: '&6[ClearLag] &cThe server is overloaded, executing lag-perventing measures'
   recover-broadcast-message: '&6[ClearLag] &aThe server is no longer overloaded!'
   broadcast-enabled: false
   interval: 15
-  tps-trigger: 14.0
-  tps-recover: 19.0
+  tps-trigger: 12.0
+  tps-recover: 18.0
   commands:
-    - 'lagg killmobs'
+    # - 'lagg killmobs'
     - 'lagg clear'
     - 'lagg halt on'
   recover-commands:
@@ -331,8 +331,8 @@ kill-mobs:
 # -- 'remove-mobs-on-chunk-unload' is whether or not Clearlag should remove
 # --  the mobs spawned by the mobspawner upon chunk unload (Highly Recommended)
 mobspawner:
-  enabled: false
-  max-spawn: 4
+  enabled: true
+  max-spawn: 3
   remove-mobs-on-chunk-unload: true
 
 #Dont use if you have CB++ or Spigot!
@@ -357,7 +357,7 @@ auto-removal:
   enabled: true
   broadcast-message: '&6[ClearLag] &aRemoved +RemoveAmount Entities!'
   broadcast-removal: true
-  autoremoval-interval: 460
+  autoremoval-interval: 1800
   world-filter:
   # - this_world <-This world will be ignored during removal!
   boat: false

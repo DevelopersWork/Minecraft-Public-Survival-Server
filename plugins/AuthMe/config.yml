@@ -103,15 +103,15 @@ settings:
         # The next time the player joins the server, if his IP
         # is the same as last time and the timeout hasn't
         # expired, he will not need to authenticate.
-        enabled: false
+        enabled: true
         # After how many minutes should a session expire?
         # A player's session ends after the timeout or if his IP has changed
-        timeout: 10
+        timeout: 300
     # Message language, available languages:
     # https://github.com/AuthMe/AuthMeReloaded/blob/master/docs/translations.md
     messagesLanguage: en
     # Forces authme to hook into Vault instead of a specific permission handler system.
-    forceVaultHook: false
+    forceVaultHook: true
     # Log level: INFO, FINE, DEBUG. Use INFO for general messages,
     # FINE for some additional detailed ones (like password failed),
     # and DEBUG for debugging
@@ -120,14 +120,14 @@ settings:
     # typical communication with the database to happen synchronously, set this to false
     useAsyncTasks: true
     # The name of the server, used in some placeholders.
-    serverName: Your Minecraft Server
+    serverName: Crafters@Work
     restrictions:
         # Can not authenticated players chat?
         # Keep in mind that this feature also blocks all commands not
         # listed in the list below.
         allowChat: false
         # Hide the chat log from players who are not authenticated?
-        hideChat: false
+        hideChat: true
         # Allowed commands for unauthenticated players
         allowCommands: 
         - /login
@@ -141,7 +141,7 @@ settings:
         - /totp
         # Max number of allowed registrations per IP
         # The value 0 means an unlimited number of registrations!
-        maxRegPerIp: 1
+        maxRegPerIp: 3
         # Minimum allowed username length
         minNicknameLength: 3
         # Maximum allowed username length
@@ -164,7 +164,7 @@ settings:
             - world_nether
             - world_the_end
         # This option will save the quit location of the players.
-        SaveQuitLocation: false
+        SaveQuitLocation: true
         # To activate the restricted user feature you need
         # to enable this option and configure the AllowedRestrictedUser field.
         AllowRestrictedUser: false
@@ -177,11 +177,11 @@ settings:
         #     - playername;regex:127\.0\.0\..*
         AllowedRestrictedUser: []
         # Ban unknown IPs trying to log in with a restricted username?
-        banUnsafedIP: false
+        banUnsafedIP: true
         # Should unregistered players be kicked immediately?
         kickNonRegistered: false
         # Should players be kicked on wrong password?
-        kickOnWrongPassword: true
+        kickOnWrongPassword: false
         # Should not logged in players be teleported to the spawn?
         # After the authentication they will be teleported back to
         # their normal position.
@@ -190,34 +190,34 @@ settings:
         allowMovement: false
         # After how many seconds should players who fail to login or register
         # be kicked? Set to 0 to disable.
-        timeout: 30
+        timeout: 180
         # Regex pattern of allowed characters in the player name.
         allowedNicknameCharacters: '[a-zA-Z0-9_]*'
         # How far can unregistered players walk?
         # Set to 0 for unlimited radius
-        allowedMovementRadius: 100
+        allowedMovementRadius: 1
         # Should we protect the player inventory before logging in? Requires ProtocolLib.
         ProtectInventoryBeforeLogIn: true
         # Should we deny the tabcomplete feature before logging in? Requires ProtocolLib.
-        DenyTabCompleteBeforeLogin: false
+        DenyTabCompleteBeforeLogin: true
         # Should we display all other accounts from a player when he joins?
         # permission: /authme.admin.accounts
         displayOtherAccounts: true
         # Spawn priority; values: authme, essentials, cmi, multiverse, default
         spawnPriority: authme,essentials,cmi,multiverse,default
         # Maximum Login authorized by IP
-        maxLoginPerIp: 0
+        maxLoginPerIp: 3
         # Maximum Join authorized by IP
-        maxJoinPerIp: 0
+        maxJoinPerIp: 1
         # AuthMe will NEVER teleport players if set to true!
-        noTeleport: false
+        noTeleport: true
         # Regex syntax for allowed chars in passwords. The default [!-~] allows all visible ASCII
         # characters, which is what we recommend. See also http://asciitable.com
         # You can test your regex with https://regex101.com
         allowedPasswordCharacters: '[!-~]*'
     GameMode:
         # Force survival gamemode when player joins?
-        ForceSurvivalMode: false
+        ForceSurvivalMode: true
     unrestrictions:
         # Below you can list all account names that AuthMe will ignore
         # for registration or login. Configure it at your own risk!!
@@ -275,7 +275,7 @@ settings:
         enabled: true
         # Send every X seconds a message to a player to
         # remind him that he has to login/register
-        messageInterval: 5
+        messageInterval: 12
         # Only registered and logged in players can play.
         # See restrictions for exceptions
         force: true
@@ -300,7 +300,7 @@ settings:
     # {MAXPLAYERS}: display server slots, {IP}: player ip, {LOGINS}: number of players logged,
     # {WORLD}: player current world, {SERVER}: server name
     # {VERSION}: get current bukkit version, {COUNTRY}: player country
-    useWelcomeMessage: true
+    useWelcomeMessage: false
     # Broadcast the welcome message to the server or only to the player?
     # set true for server or false for player
     broadcastWelcomeMessage: false
@@ -314,7 +314,7 @@ settings:
     # {DISPLAYNAMENOCOLOR}: the player display name (without colors)
     customJoinMessage: ''
     # Should we remove the leave messages of unlogged users?
-    removeUnloggedLeaveMessage: false
+    removeUnloggedLeaveMessage: true
     # Should we remove join messages altogether?
     removeJoinMessage: false
     # Should we remove leave messages altogether?
@@ -327,7 +327,7 @@ settings:
 GroupOptions:
     # Enables switching a player to defined permission groups before they log in.
     # See below for a detailed explanation.
-    enablePermissionCheck: false
+    enablePermissionCheck: true
     # This is a very important option: if a registered player joins the server
     # AuthMe will switch him to unLoggedInGroup. This should prevent all major exploits.
     # You can set up your permission plugin with this special group to have no permissions,
@@ -338,10 +338,10 @@ GroupOptions:
     # Please note that the group name is case-sensitive, so 'admin' is different from 'Admin'
     # Otherwise your group will be wiped and the player will join in the default group []!
     # Example: registeredPlayerGroup: 'NotLogged'
-    registeredPlayerGroup: ''
+    registeredPlayerGroup: 'default'
     # Similar to above, unregistered players can be set to the following
     # permissions group
-    unregisteredPlayerGroup: ''
+    unregisteredPlayerGroup: 'steve'
 Email:
     # Email SMTP server host
     mailSMTP: smtp.gmail.com
@@ -378,7 +378,7 @@ Email:
     emailOauth2Token: ''
 Hooks:
     # Do we need to hook with multiverse for spawn checking?
-    multiverse: true
+    multiverse: false
     # Do we need to hook with BungeeCord?
     bungeecord: false
     # Send player to this BungeeCord server after register/login
@@ -454,9 +454,9 @@ Security:
         logConsole: true
     captcha:
         # Enable captcha when a player uses wrong password too many times
-        useCaptcha: false
+        useCaptcha: true
         # Max allowed tries before a captcha is required
-        maxLoginTry: 5
+        maxLoginTry: 3
         # Captcha length
         captchaLength: 5
         # Minutes after which login attempts count is reset for a player
@@ -465,12 +465,12 @@ Security:
         requireForRegistration: false
     tempban:
         # Tempban a user's IP address if they enter the wrong password too many times
-        enableTempban: false
+        enableTempban: true
         # How many times a user can attempt to login before their IP being tempbanned
-        maxLoginTries: 10
+        maxLoginTries: 5
         # The length of time a IP address will be tempbanned in minutes
         # Default: 480 minutes, or 8 hours
-        tempbanLength: 480
+        tempbanLength: 60
         # How many minutes before resetting the count for failed logins by IP and username
         # Default: 480 minutes (8 hours)
         minutesBeforeCounterReset: 480
@@ -497,7 +497,7 @@ Security:
         # E.g. (if enabled)
         #  original email: my.email@example.com
         #  hidden email: my.***@***mple.com
-        enableEmailMasking: false
+        enableEmailMasking: true
         # Minutes after which a verification code will expire
         verificationCodeExpiration: 10
 # Before a user logs in, various properties are temporarily removed from the player,

@@ -4,6 +4,7 @@ cache
 # Log files
 *.log
 logs
+.console_history
 
 # db files
 *.db*
