@@ -31,8 +31,8 @@ SkinWithoutPerm: true
 # Players cooldown when changing skins (set to 0 to disable).
 # SkinErrorCooldown when a error or invalid url occurs.
 # Can be bypassed with 'skinsrestorer.bypasscooldown'.
-SkinChangeCooldown: 30
-SkinErrorCooldown: 5
+SkinChangeCooldown: 300
+SkinErrorCooldown: 69
 
   #################
 # Customization #
@@ -53,11 +53,13 @@ DisablePrefix: false
 # [?] Supports custom & url.png skins, read SkinFile Generator below. [?]
 # [!] url.png won't work on join for bungee, see https://github.com/SkinsRestorer/SkinsRestorerX/issues/315 [!]
 DefaultSkins:
-  Enabled: false
+  Enabled: true
   ApplyForPremium: false
   Names:
-    - "xknat"
-    - "McLive"
+    - "creeper"
+    - "zombie"
+    - "endermen"
+    - "crafter"
 
 # Skins in this list will be disabled, so users can't set them.
 # Can be bypassed with 'skinsrestorer.bypassdisabled'.
