@@ -83,7 +83,7 @@ use-server-uuid-cache: false
 #
 # - A H2 database is the default option.
 # - If you want to edit data manually in "traditional" storage files, we suggest using YAML.
-storage-method: h2
+storage-method: ${STORAGE}
 
 # The following block defines the settings for remote database storage methods.
 #
@@ -95,15 +95,15 @@ data:
   # - The standard DB engine port is used by default
   #   (MySQL: 3306, PostgreSQL: 5432, MongoDB: 27017)
   # - Specify as "host:port" if differs
-  address: localhost
+  address: ${ADDRESS}
 
   # The name of the database to store LuckPerms data in.
   # - This must be created already. Don't worry about this setting if you're using MongoDB.
-  database: minecraft
+  database: ${DATABASE}
 
   # Credentials for the database.
-  username: root
-  password: ''
+  username: ${USERNAME}
+  password: ${PASSWORD}
 
   # These settings apply to the MySQL connection pool.
   # - The default values will be suitable for the majority of users.
@@ -159,11 +159,11 @@ data:
 
   # The prefix to use for all LuckPerms collections. Change this if you want to use different
   # collections for different servers. The default is no prefix.
-  mongodb-collection-prefix: ''
+  mongodb-collection-prefix: 'luckperms_'
 
   # MongoDB ClientConnectionURI for use with replica sets and custom connection options
   # - See https://docs.mongodb.com/manual/reference/connection-string/
-  mongodb-connection-uri: ''
+  mongodb-connection-uri: '${MONGODB_CONNECTION_URI}'
 
 # Define settings for a "split" storage setup.
 #
@@ -171,14 +171,14 @@ data:
 # - The connection options above still have to be correct for each type here.
 split-storage:
   # Don't touch this if you don't want to use split storage!
-  enabled: false
+  enabled: true
   methods:
     # These options don't need to be modified if split storage isn't enabled.
-    user: h2
-    group: h2
-    track: h2
-    uuid: h2
-    log: h2
+    user: ${STORAGE_USER}
+    group: ${STORAGE_GROUP}
+    track: ${STORAGE_TRACK}
+    uuid: ${STORAGE_UUID}
+    log: ${STORAGE_LOG}
 
 
 
