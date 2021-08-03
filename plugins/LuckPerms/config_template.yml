@@ -175,8 +175,8 @@ split-storage:
   methods:
     # These options don't need to be modified if split storage isn't enabled.
     user: ${STORAGE_USER}
-    group: ${STORAGE_GROUP}
-    track: ${STORAGE_TRACK}
+    group: h2
+    track: h2
     uuid: ${STORAGE_UUID}
     log: ${STORAGE_LOG}
 
