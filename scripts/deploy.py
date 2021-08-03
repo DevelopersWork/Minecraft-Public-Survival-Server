@@ -5,8 +5,9 @@ root_directory = '/server'
 
 if __name__ == '__main__':
     env = []
+    __dir = root_directory + '/scripts'
     try:
-        with open('./env.json') as file:
+        with open(__dir + '/env.json') as file:
             env = json.load(file)
     except:
         pass

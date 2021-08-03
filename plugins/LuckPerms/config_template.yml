@@ -171,7 +171,7 @@ data:
 # - The connection options above still have to be correct for each type here.
 split-storage:
   # Don't touch this if you don't want to use split storage!
-  enabled: true
+  enabled: ${STORAGE_SPLIT}
   methods:
     # These options don't need to be modified if split storage isn't enabled.
     user: ${STORAGE_USER}
