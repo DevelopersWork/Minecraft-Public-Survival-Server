@@ -31,8 +31,8 @@
 #
 # DiscordToMinecraftAllRolesSeparator: the separator used in between roles in %allroles%
 #
-DiscordToMinecraftChatMessageFormat: "[<aqua>Discord</aqua> | %toprolecolor%%toprolealias%<reset>] %name% » %message%"
-DiscordToMinecraftChatMessageFormatNoRole: "[<aqua>Discord</aqua>] %name% » %message%"
+DiscordToMinecraftChatMessageFormat: "<aqua>D</aqua>: %name% » %message%"
+DiscordToMinecraftChatMessageFormatNoRole: "<aqua>D</aqua>: %name% » %message%"
 DiscordToMinecraftAllRolesSeparator: " | "
 
 # Minecraft -> Discord message
@@ -63,8 +63,8 @@ DiscordToMinecraftAllRolesSeparator: " | "
 #                  example: Global
 # PlaceholderAPI placeholders are also supported
 #
-MinecraftChatToDiscordMessageFormat: "**%primarygroup%** %displayname% » %message%"
-MinecraftChatToDiscordMessageFormatNoPrimaryGroup: "%displayname% » %message%"
+MinecraftChatToDiscordMessageFormat: "%worldalias%: [*%primarygroup%*] **%displayname%** » `%message%`"
+MinecraftChatToDiscordMessageFormatNoPrimaryGroup: "%worldalias%: **%displayname%** » `%message%`"
 
 # Chat channel plugin message
 # This is a special message that's only used when a supported chat channel plugin is hooked
