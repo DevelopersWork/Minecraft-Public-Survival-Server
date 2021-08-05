@@ -40,7 +40,7 @@ Require linked account to play:
   #     ex: [135634590575493120, 690411863766466590]
   #
   # This option's value is superseded when you have subscriber roles enforced below.
-  Must be in Discord server: true
+  Must be in Discord server: 346204799756271617
 
   # Optionally require people to not only be linked but also to have a one of or all specified roles like a Twitch sub role
   Subscriber role:
