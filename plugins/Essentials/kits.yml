@@ -18,6 +18,9 @@ kits:
       - stoneshovel 1
       - stonepickaxe 1
       - stoneaxe 1
+      - woodenshovel 1 name:&4Claim_land author:CraftersWork lore:Tool_for_claiming_land
+      - stick 1 name:&4Land_info author:CraftersWork lore:Check_the_land_info
+      - bread 16
   dtools:
     delay: 600
     items:
