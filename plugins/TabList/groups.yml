@@ -27,3 +27,5 @@ groups:
     prefix: '&nALEX&r - '
   STEVE:
     prefix: '&7STEVE&r - '
+  CAPTAIN:
+    prefix: '&0CAPTAIN&r - '

@@ -1,0 +1,26 @@
+# ---- Region Chat Configuration ----
+# Description: This plugin its a RedProtect extension to change/make to allow player to chat with other players on same region
+# Configurations:
+# chat:
+# - chat options: Placeholders to be used on chat
+# 
+# config:
+# - allow-nonmember-chat: false - Allow no members to chat on region chat
+# - allowed-worlds: [] - Allowed worlds to use region chat
+# 
+# messages:
+# - messages: Messages to show on commands
+
+chat:
+  no-member: '&7[&8N&7]'
+  member: '&7[&aM&7]'
+  admin: '&7[&cA&7]'
+  leader: '&7[&4L&7]'
+  message: '&8{region}&r {member} &f{player}:&b{message}'
+config:
+  allow-nonmember-chat: false
+  allowed-worlds: []
+messages:
+  noregion: '&cNo regions here to chat!'
+  nopermchat: '&cYou don''t have permission to chat in this region!'
+  worldnotallowed: '&cRegion chat is not allowed in this world!'
