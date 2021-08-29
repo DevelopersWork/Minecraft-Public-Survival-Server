@@ -199,7 +199,7 @@ split-storage:
 # - This is disabled by default, as most users will not need it. However, if you're using a remote
 #   storage type without a messaging service setup, you may wish to set this to something like 3.
 # - Set to -1 to disable the task completely.
-sync-minutes: -1
+sync-minutes: 3
 
 # If the file watcher should be enabled.
 #
@@ -285,7 +285,7 @@ rabbitmq:
 #   => replace      durations will be replaced if the new duration is later than the current
 #                   expiration
 #   => deny         the command will just fail if you try to add another node with the same expiry
-temporary-add-behaviour: deny
+temporary-add-behaviour: replace
 
 # Controls how LuckPerms will determine a users "primary" group.
 #
