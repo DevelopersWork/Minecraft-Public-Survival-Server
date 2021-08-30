@@ -35,7 +35,8 @@ interval: 4
 random: false
 
 header:
-- "&9&m============================================\n%anim:crafterswork%"
+- "&0&m============================================"
+- "%anim:crafterswork%"
 - "&7<75> %anim:welcome% %player%&c!&7 <74>"
 - "&r"
 # - "&7<75> %anim:welcome% %player%&c!&7 <74>\n&6Ping:&r %ping%&7ms"
@@ -51,7 +52,7 @@ footer:
 - "&7<28> %anim:follow% &5&lTwitch &7 <28>"
 # - "&7<28> %anim:ip%&7:&2 crafterswork.developerswork.online&7 <28>"
 - "&7<28> &d twitch.tv/developerswork&7 <28>"
-- "&9&m============================================"
+- "&0&m============================================"
 
 # Defines per world tablist for different worlds
 # You can separate worlds with ", " to show tablist in that worlds
