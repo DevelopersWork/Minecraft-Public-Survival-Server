@@ -199,14 +199,14 @@ split-storage:
 # - This is disabled by default, as most users will not need it. However, if you're using a remote
 #   storage type without a messaging service setup, you may wish to set this to something like 3.
 # - Set to -1 to disable the task completely.
-sync-minutes: 3
+sync-minutes: -1
 
 # If the file watcher should be enabled.
 #
 # - When using a file-based storage type, LuckPerms can monitor the data files for changes, and
 #   automatically update when changes are detected.
 # - If you don't want this feature to be active, set this option to false.
-watch-files: true
+watch-files: false
 
 # Define which messaging service should be used by the plugin.
 #
@@ -238,14 +238,14 @@ messaging-service: auto
 auto-push-updates: true
 
 # If LuckPerms should push logging entries to connected servers via the messaging service.
-push-log-entries: true
+push-log-entries: false
 
 # If LuckPerms should broadcast received logging entries to players on this platform.
 #
 # - If you have LuckPerms installed on your backend servers as well as a BungeeCord proxy, you
 #   should set this option to false on either your backends or your proxies, to avoid players being
 #   messaged twice about log entries.
-broadcast-received-log-entries: true
+broadcast-received-log-entries: false
 
 # Settings for Redis.
 # Port 6379 is used by default; set address to "host:port" if differs
@@ -285,7 +285,7 @@ rabbitmq:
 #   => replace      durations will be replaced if the new duration is later than the current
 #                   expiration
 #   => deny         the command will just fail if you try to add another node with the same expiry
-temporary-add-behaviour: replace
+temporary-add-behaviour: deny
 
 # Controls how LuckPerms will determine a users "primary" group.
 #
@@ -298,7 +298,7 @@ temporary-add-behaviour: replace
 #   => parents-by-weight       just use the users most highly weighted parent
 #   => all-parents-by-weight   same as above, but calculates based upon all parents inherited from
 #                              both directly and indirectly
-primary-group-calculation: parents-by-weight
+primary-group-calculation: all-parents-by-weight
 
 # If the plugin should check for "extra" permissions with users run LP commands.
 #
