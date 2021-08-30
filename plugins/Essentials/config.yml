@@ -35,8 +35,8 @@ max-nick-length: 15
 # A list of phrases that cannot be used in nicknames. You can include regular expressions here.
 # Users with essentials.nick.blacklist.bypass will be able to bypass this filter.
 nick-blacklist:
-#- Notch
-#- '^Dinnerbone'
+- developerswork
+# - '^Dinnerbone'
 
 # When this option is enabled, nickname length checking will exclude color codes in player names.
 # ie: "&6Notch" has 7 characters (2 are part of a color code), a length of 5 is used when this option is set to true
@@ -47,7 +47,7 @@ ignore-colors-in-max-nick-length: false
 hide-displayname-in-vanish: true
 
 # Disable this if you have any other plugin, that modifies the displayname of a user.
-change-displayname: true
+change-displayname: false
 
 # When this option is enabled, the (tab) player list will be updated with the displayname.
 # The value of change-displayname (above) has to be true.
@@ -57,7 +57,7 @@ change-displayname: true
 # This setting is ignored if EssentialsChat.jar is used, and defaults to 'true'.
 # The value of change-displayname (above) has to be true.
 # Do not edit this setting unless you know what you are doing!
-#add-prefix-suffix: false
+add-prefix-suffix: false
 
 # When this option is enabled, player prefixes will be shown in the playerlist.
 # This feature only works for Minecraft version 1.8 and higher.
@@ -88,14 +88,14 @@ force-safe-teleport-location: false
 teleport-passenger-dismount: true
 
 # The delay, in seconds, required between /home, /tp, etc.
-teleport-cooldown: 60
+teleport-cooldown: 90
 
 # The delay, in seconds, before a user actually teleports. If the user moves or gets attacked in this timeframe, the teleport is cancelled.
 teleport-delay: 3
 
 # The delay, in seconds, a player can't be attacked by other players after they have been teleported by a command.
 # This will also prevent the player attacking other players.
-teleport-invulnerability: 15
+teleport-invulnerability: 8
 
 # Whether to make all teleportations go to the center of the block; where the x and z coordinates decimal become .5
 teleport-to-center: true
@@ -168,7 +168,7 @@ overridden-commands:
 # See http://wiki.bukkit.org/Commands.yml#aliases to map commands to other plugins.
 disabled-commands:
 #  - nick
-#  - clear
+ - clear
 
 # These commands will be shown to players with socialSpy enabled.
 # You can add commands from other plugins you may want to track or
@@ -231,85 +231,7 @@ mute-commands:
 #
 # To enable this feature, please set use-bukkit-permissions to false.
 player-commands:
-  - afk
-  - afk.auto
-  - back
-  - back.ondeath
-  - balance
-  - balance.others
-  - balancetop
-  - build
-  - chat.color
-  - chat.format
-  - chat.shout
-  - chat.question
-  - clearinventory
-  - compass
-  - depth
-  - delhome
-  - getpos
-  - geoip.show
-  - help
-  - helpop
   - home
-  - home.others
-  - ignore
-  - info
-  - itemdb
-  - kit
-  - kits.tools
-  - list
-  - mail
-  - mail.send
-  - me
-  - motd
-  - msg
-  - msg.color
-  - nick
-  - near
-  - pay
-  - ping
-  - protect
-  - r
-  - rules
-  - realname
-  - seen
-  - sell
-  - sethome
-  - setxmpp
-  - signs.create.protection
-  - signs.create.trade
-  - signs.break.protection
-  - signs.break.trade
-  - signs.use.balance
-  - signs.use.buy
-  - signs.use.disposal
-  - signs.use.enchant
-  - signs.use.free
-  - signs.use.gamemode
-  - signs.use.heal
-  - signs.use.info
-  - signs.use.kit
-  - signs.use.mail
-  - signs.use.protection
-  - signs.use.repair
-  - signs.use.sell
-  - signs.use.time
-  - signs.use.trade
-  - signs.use.warp
-  - signs.use.weather
-  - spawn
-  - suicide
-  - time
-  - tpa
-  - tpaccept
-  - tpahere
-  - tpdeny
-  - warp
-  - warp.list
-  - world
-  - worth
-  - xmpp
 
 # Use this option to force superperms-based permissions handler regardless of detected installed perms plugin.
 # This is useful if you want superperms-based permissions (with wildcards) for custom permissions plugins.
@@ -380,7 +302,7 @@ backup:
   # Interval in minutes.
   interval: 30
   # If true, the backup task will run even if there are no players online.
-  always-run: false
+  always-run: true
   # Unless you add a valid backup command or script here, this feature will be useless.
   # Use 'save-all' to simply force regular world saving without backup.
   # The example command below utilizes rdiff-backup: https://rdiff-backup.net/
@@ -796,11 +718,11 @@ chat:
   # For more information of chat formatting, check out the wiki: http://wiki.ess3.net/wiki/Chat_Formatting
   # Note: Using the {PREFIX} and {SUFFIX} placeholders along with {DISPLAYNAME} may cause double prefixes/suffixes to be shown in chat unless add-prefix-suffix is uncommented and set to false.
 
-  format: '<{DISPLAYNAME}> {MESSAGE}'
+  format: '{PREFIX} {DISPLAYNAME} {SUFFIX} &r&f»&r&f {MESSAGE}'
   #format: '&7[{GROUP}]&r {DISPLAYNAME}&7:&r {MESSAGE}'
   #format: '&7{PREFIX}&r {DISPLAYNAME}&r &7{SUFFIX}&r: {MESSAGE}'
 
-  group-formats:
+  group-formats: '&c[{GROUP}]&r {DISPLAYNAME} &r&f»&r&f {MESSAGE}'
   #  default: '{WORLDNAME} {DISPLAYNAME}&7:&r {MESSAGE}'
   #  admins: '{WORLDNAME} &c[{GROUP}]&r {DISPLAYNAME}&7:&c {MESSAGE}'
 
@@ -831,7 +753,7 @@ protect:
     lava-itemdamage: false
     flint-fire: false
     lightning-fire-spread: true
-    portal-creation: false
+    portal-creation: true
     tnt-explosion: false
     tnt-playerdamage: false
     tnt-itemdamage: false
@@ -856,7 +778,7 @@ protect:
     enderman-pickup: false
     villager-death: false
     bed-explosion: false
-    respawn-anchor-explosion: false
+    respawn-anchor-explosion: true
     # Monsters won't follow players.
     # permission essentials.protect.entitytarget.bypass disables this.
     entitytarget: false
@@ -927,7 +849,7 @@ protect:
 
     # Users with the essentials.protect.pvp permission will still be able to attack each other if this is set to true.
     # They will be unable to attack users without that same permission node.
-    pvp: false
+    pvp: true
 
     # Should drowning damage be disabled?
     # (Split into two behaviors; generally, you want both set to the same value.)
@@ -970,39 +892,39 @@ protect:
     # Should people without the essentials.build permission be allowed to build?
     # Set true to disable building for those people.
     # Setting to false means EssentialsAntiBuild will never prevent you from building.
-    build: true
+    build: false
 
     # Should people without the essentials.build permission be allowed to use items?
     # Set true to disable using for those people.
     # Setting to false means EssentialsAntiBuild will never prevent you from using items.
-    use: true
+    use: false
 
     # Should we warn people when they are not allowed to build?
-    warn-on-build-disallow: true
+    warn-on-build-disallow: false
 
   # For which block types would you like to be alerted?
   # You can find a list of items at https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Material.html.
   alert:
-    on-placement: LAVA,TNT,LAVA_BUCKET
-    on-use: LAVA_BUCKET
+    on-placement: TNT
+    on-use: 
     on-break:
 
   blacklist:
 
     # Which blocks should people be prevented from placing?
-    placement: LAVA,TNT,LAVA_BUCKET
+    placement: END_PORTAL_FRAME, ENDER_EYE, NETHER_PORTAL, ENDER_EYE
 
     # Which items should people be prevented from using?
-    usage: LAVA_BUCKET
+    usage: ENDER_EYE, NETHER_PORTAL, ENDER_EYE
 
     # Which blocks should people be prevented from breaking?
-    break:
+    break: BEDROCK, BARRIER, END_PORTAL_FRAME, NETHER_PORTAL
 
     # Which blocks should not be moved by pistons?
-    piston:
+    piston: BEDROCK, BARRIER, END_PORTAL_FRAME, NETHER_PORTAL
 
     # Which blocks should not be dispensed by dispensers
-    dispenser:
+    dispenser: BEDROCK, BARRIER, END_PORTAL_FRAME, NETHER_PORTAL
 
 ############################################################
 # +------------------------------------------------------+ #
@@ -1022,7 +944,7 @@ newbies:
 
   # When we spawn for the first time, which spawnpoint do we use?
   # Set to "none" if you want to use the spawn point of the world.
-  spawnpoint: newbies
+  spawnpoint: none
 
   # Do we want to give users anything on first join? Set to '' to disable
   # This kit will be given regardless of cost and permissions, and will not trigger the kit delay.
@@ -1034,21 +956,21 @@ newbies:
 # Set this to lowest, if you want Multiverse to handle the respawning.
 # Set this to high, if you want EssentialsSpawn to handle the respawning.
 # Set this to highest, if you want to force EssentialsSpawn to handle the respawning.
-respawn-listener-priority: high
+respawn-listener-priority: highest
 
 # What priority should we use for handling spawning on joining the server?
 # See respawn-listener-priority for possible values.
 # Note: changing this may impact or break spawn-on-join functionality.
-spawn-join-listener-priority: high
+spawn-join-listener-priority: highest
 
 # When users die, should they respawn at their first home or bed, instead of the spawnpoint?
-respawn-at-home: false
+respawn-at-home: true
 
 # When users die, should EssentialsSpawn respect users' respawn anchors?
-respawn-at-anchor: false
+respawn-at-anchor: true
 
 # Teleport all joining players to the spawnpoint
-spawn-on-join: false
+spawn-on-join: true
 # The following value of `guests` states that all players in group `guests` will be teleported to spawn when joining.
 #spawn-on-join: guests
 # The following list value states that all players in group `guests` and `admin` are to be teleported to spawn when joining. 

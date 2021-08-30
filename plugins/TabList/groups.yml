@@ -22,10 +22,22 @@ groups:
     tabname: '%player%'
     suffix: ''
   NOOB:
-    prefix: '&fNOOB&r - '
+    prefix: "%luckperms_prefix% "
+    tabname: '%player% '
+    suffix: ' &r'
   ALEX:
-    prefix: '&nALEX&r - '
+    prefix: "%luckperms_prefix% "
+    tabname: '%player% '
+    suffix: ' &r'
   STEVE:
-    prefix: '&7STEVE&r - '
+    prefix: "%luckperms_prefix% "
+    tabname: '%player% '
+    suffix: ' &r'
   CAPTAIN:
-    prefix: '&0CAPTAIN&r - '
+    prefix: "%luckperms_prefix% "
+    tabname: '%player% '
+    suffix: ' &r'
+  MOD:
+    prefix: "%luckperms_prefix% "
+    tabname: '%player% '
+    suffix: ' &r'
