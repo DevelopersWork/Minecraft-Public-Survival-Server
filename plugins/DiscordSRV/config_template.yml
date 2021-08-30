@@ -24,10 +24,10 @@ BotToken: "${BOTTOKEN}"
 # for /discord broadcast: broadcasts (unless specified in the command)
 #
 # The first part of channel pairs is not the Discord channel name!
-Channels: ${Channels}
+Channels: ${CHANNELS}
 
 # Console channel numerical ID (NOT NAME), leave blank to disable the console channel all together
-DiscordConsoleChannelId: "000000000000000000"
+DiscordConsoleChannelId: "${CONSOLE_CHANNEL}"
 
 # Invitation link shown to players when using /discord and on the message shown to unlinked players when linking is enforced
 DiscordInviteLink: "https://discord.gg/mhdDvXDkVn"
@@ -142,7 +142,7 @@ DiscordChatChannelRoleAliases: {"Developer": "Dev"}
 # DiscordConsoleChannelLevels: levels to send to console channel via appender
 # DiscordConsoleChannelAllowPluginUpload: should uploading plugins to the console channel add them to the server automatically
 #
-DiscordConsoleChannelLogRefreshRateInSeconds: 5
+DiscordConsoleChannelLogRefreshRateInSeconds: 8
 DiscordConsoleChannelUsageLog: "Console-%date%.log"
 DiscordConsoleChannelBlacklistActsAsWhitelist: false
 DiscordConsoleChannelBlacklistedCommands: ["?", "op", "deop", "execute"]
@@ -211,7 +211,7 @@ ChannelTopicUpdaterRateInMinutes: 10
 # If you do not want any canned responses, set this to just {}
 # PlaceholderAPI placeholders are supported for the values
 #
-DiscordCannedResponses: {"!ip": "yourserveripchange.me", "!site": "http://yoursiteurl.net"}
+DiscordCannedResponses: {"!ip": "${IP}", "!site": "${SITE}"}
 
 # Minecraft to Discord account linking
 # These are the config options pertaining to how linking a Minecraft account to a Discord account functions
@@ -230,9 +230,9 @@ DiscordCannedResponses: {"!ip": "yourserveripchange.me", "!site": "http://yoursi
 # MinecraftDiscordAccountLinkedRoleNameToAddUserTo: the name of a discord role to add a discord user to when they link their account
 # MinecraftDiscordAccountLinkedAllowRelinkBySendingANewCode: allows sending a new code to the bot to unlink and relink with the new code
 #
-MinecraftDiscordAccountLinkedConsoleCommands: ["", "", ""]
-MinecraftDiscordAccountUnlinkedConsoleCommands: ["", "", ""]
-MinecraftDiscordAccountLinkedRoleNameToAddUserTo: "Steve"
+MinecraftDiscordAccountLinkedConsoleCommands: []
+MinecraftDiscordAccountUnlinkedConsoleCommands: ["kick %minecraftplayername%"]
+MinecraftDiscordAccountLinkedRoleNameToAddUserTo: ""
 MinecraftDiscordAccountLinkedAllowRelinkBySendingANewCode: false
 
 # Server watchdog
