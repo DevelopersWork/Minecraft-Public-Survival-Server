@@ -33,5 +33,6 @@ if __name__ == '__main__':
                 with open(filename, 'w') as file:
                     file.write(data)
                     file.close()
-        except:
+        except Exception as e:
+            print(e)
             pass
