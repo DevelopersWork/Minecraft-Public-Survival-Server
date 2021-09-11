@@ -13,9 +13,9 @@
 #                             example: 4988
 # PlaceholderAPI placeholders are supported for the values
 #
-NicknameSynchronizationEnabled: false
+NicknameSynchronizationEnabled: true
 NicknameSynchronizationCycleTime: 3
-NicknameSynchronizationFormat: "%displayname%"
+NicknameSynchronizationFormat: "[Crafter] %username%"
 
 # Minecraft group <-> Discord role synchronization
 # Requires Vault
@@ -33,13 +33,13 @@ NicknameSynchronizationFormat: "%displayname%"
 # GroupRoleSynchronizationCycleTime: amount of minutes between repeatedly triggering synchronization for all online players
 # GroupRoleSynchronizationCycleCompletely: whether or not synchronizations running on a timer should synchronize every member in the bots Discord servers
 #
-GroupRoleSynchronizationGroupsAndRolesToSync: {"steve": "836602779682209863", "alex": "838401575461978123"}
-GroupRoleSynchronizationMinecraftIsAuthoritative: true
-GroupRoleSynchronizationOneWay: false
-GroupRoleSynchronizationEnableDenyPermission: false
+GroupRoleSynchronizationGroupsAndRolesToSync: {}
+GroupRoleSynchronizationMinecraftIsAuthoritative: false
+GroupRoleSynchronizationOneWay: true
+GroupRoleSynchronizationEnableDenyPermission: true
 GroupRoleSynchronizationPrimaryGroupOnly: false
-GroupRoleSynchronizationOnLink: true
-GroupRoleSynchronizationCycleTime: 5
+GroupRoleSynchronizationOnLink: false
+GroupRoleSynchronizationCycleTime: 9999
 GroupRoleSynchronizationCycleCompletely: false
 
 # Ban synchronization
