@@ -17,3 +17,7 @@ banned*.json
 ops.json
 usercache.json
 whitelist.json
+
+# run below commands for tracking and untracking the files
+# git update-index --no-assume-unchanged .\server.properties
+# git update-index --assume-unchanged .\server.properties
