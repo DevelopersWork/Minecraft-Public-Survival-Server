@@ -206,7 +206,7 @@ sync-minutes: -1
 # - When using a file-based storage type, LuckPerms can monitor the data files for changes, and
 #   automatically update when changes are detected.
 # - If you don't want this feature to be active, set this option to false.
-watch-files: true
+watch-files: false
 
 # Define which messaging service should be used by the plugin.
 #
