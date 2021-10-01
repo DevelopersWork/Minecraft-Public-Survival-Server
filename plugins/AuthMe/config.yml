@@ -327,7 +327,7 @@ settings:
 GroupOptions:
     # Enables switching a player to defined permission groups before they log in.
     # See below for a detailed explanation.
-    enablePermissionCheck: true
+    enablePermissionCheck: false
     # This is a very important option: if a registered player joins the server
     # AuthMe will switch him to unLoggedInGroup. This should prevent all major exploits.
     # You can set up your permission plugin with this special group to have no permissions,
@@ -341,7 +341,7 @@ GroupOptions:
     registeredPlayerGroup: 'default'
     # Similar to above, unregistered players can be set to the following
     # permissions group
-    unregisteredPlayerGroup: 'steve'
+    unregisteredPlayerGroup: 'default'
 Email:
     # Email SMTP server host
     mailSMTP: smtp.gmail.com
@@ -391,7 +391,7 @@ Protection:
     # Enable some servers protection (country based login, antibot)
     enableProtection: false
     # Apply the protection also to registered usernames
-    enableProtectionRegistered: true
+    enableProtectionRegistered: false
     geoIpDatabase:
         # The MaxMind clientId used to download the GeoIp database,
         # get one at https://www.maxmind.com/en/accounts/current/license-key

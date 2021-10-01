@@ -41,7 +41,7 @@ server: global
 # - To get around this, you can use a player's uuid directly in the command, or enable this option.
 # - When this is set to 'true', the server facility is used. This may use a number of methods,
 #   including checking the servers local cache, or making a request to the Mojang API.
-use-server-uuid-cache: false
+use-server-uuid-cache: true
 
 
 
@@ -150,8 +150,8 @@ data:
     properties:
       useUnicode: true
       characterEncoding: utf8
-      #useSSL: false
-      #verifyServerCertificate: false
+      useSSL: true
+      verifyServerCertificate: true
 
   # The prefix for all LuckPerms SQL tables.
   # - Change this if you want to use different tables for different servers.
@@ -175,8 +175,8 @@ split-storage:
   methods:
     # These options don't need to be modified if split storage isn't enabled.
     user: ${STORAGE_USER}
-    group: h2
-    track: h2
+    group: H2
+    track: H2
     uuid: ${STORAGE_UUID}
     log: ${STORAGE_LOG}
 
@@ -232,7 +232,7 @@ watch-files: false
 #   => rabbitmq  Uses RabbitMQ pub-sub to push changes. Your server connection info must be
 #                configured below.
 #   => auto      Attempts to automatically setup a messaging service using redis or sql.
-messaging-service: auto
+messaging-service: 'notsql'
 
 # If LuckPerms should automatically push updates after a change has been made with a command.
 auto-push-updates: true
