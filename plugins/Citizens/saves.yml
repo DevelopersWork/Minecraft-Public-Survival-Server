@@ -28,7 +28,7 @@ npc:
       spawned: false
       owner:
         uuid: ''
-    traitnames: type,mounttrait,equipment,inventory,spawned,skintrait,location,owner,scoreboardtrait,sneak
+    traitnames: spawned,skintrait,location,equipment,sneak,scoreboardtrait,type,inventory,owner,mounttrait
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -61,7 +61,7 @@ npc:
       spawned: false
       owner:
         uuid: ''
-    traitnames: type,mounttrait,equipment,skintrait,spawned,inventory,location,owner,scoreboardtrait,sneak
+    traitnames: spawned,skintrait,location,equipment,sneak,scoreboardtrait,type,inventory,owner,mounttrait
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -84,7 +84,7 @@ npc:
         z: '0.0'
         yaw: '0.0'
         pitch: '0.0'
-    traitnames: type,mounttrait,spawned,location
+    traitnames: spawned,location,type,mounttrait
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -113,7 +113,7 @@ npc:
       spawned: false
       owner:
         uuid: ''
-    traitnames: type,mounttrait,equipment,inventory,skintrait,spawned,location,scoreboardtrait,owner,sneak
+    traitnames: spawned,skintrait,location,equipment,sneak,scoreboardtrait,type,inventory,owner,mounttrait
     navigator:
       speedmodifier: '1.0'
       avoidwater: false
@@ -136,7 +136,7 @@ npc:
         z: '0.0'
         yaw: '0.0'
         pitch: '0.0'
-    traitnames: type,mounttrait,spawned,location
+    traitnames: spawned,location,type,mounttrait
     navigator:
       speedmodifier: '1.0'
       avoidwater: false

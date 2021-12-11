@@ -10,7 +10,7 @@ logs
 *.db*
 
 # worlds
-/world*
+# world*
 
 # player information
 banned*.json
@@ -20,6 +20,8 @@ whitelist.json
 
 # backup files
 *.bkp*
+
+plugins.zip
 
 # run below commands for tracking and untracking the files
 # git update-index --no-assume-unchanged .\server.properties
