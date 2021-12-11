@@ -1,8 +1,9 @@
-world: world
-x: 0.5
-y: 68.0
-z: 0.5
-yaw: -88.19944
-pitch: 4.500162
+world: 86fbdb65-9f3a-453d-99e2-9082de51fce0
+x: -58106.112736299554
+y: 81.0
+z: 71611.02657963509
+yaw: 93.50970458984375
+pitch: -1.950226902961731
 name: spawn
-lastowner: 0faa9941-5df3-33c6-8d62-4cbc7aefbf7d
+lastowner: 32638ec0-d6c4-4a5f-a384-a62e51f8d8bc
+world-name: world

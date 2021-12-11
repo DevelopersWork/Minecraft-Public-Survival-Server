@@ -1,0 +1,51 @@
+'2':
+  NPCId: 96ae51f3-d442-4131-8608-24e11dc516de
+  Location:
+    World: world
+    X: -58116.51046919257
+    Y: 75.0
+    Z: 71680.10880435482
+    Yaw: 175.78618
+    Pitch: 40.64982
+NPC:
+  96ae51f3-d442-4131-8608-24e11dc516de: 2
+  3482cf34-6d12-45e2-a013-a4b6df447a17: 1
+  857a6985-7d4e-4ecd-92c5-035c123c7b23: 3
+  5f8e2d94-7127-4dea-b1c5-3c65bc11e80e: 4
+  9bdda45d-45dc-471f-945f-ee69e374eaff: 5
+'1':
+  NPCId: 3482cf34-6d12-45e2-a013-a4b6df447a17
+  Location:
+    World: world
+    X: -58116.61200628895
+    Y: 75.0
+    Z: 71667.50094881452
+    Yaw: -0.463562
+    Pitch: -2.400299
+'3':
+  NPCId: 857a6985-7d4e-4ecd-92c5-035c123c7b23
+  Location:
+    World: world
+    X: -58108.37154239326
+    Y: 75.0
+    Z: 71668.13226281885
+    Yaw: 2.0852356
+    Pitch: 64.94966
+'4':
+  NPCId: 5f8e2d94-7127-4dea-b1c5-3c65bc11e80e
+  Location:
+    World: world
+    X: -58108.46704490679
+    Y: 75.0
+    Z: 71680.06638864549
+    Yaw: 162.13501
+    Pitch: 55.349686
+'5':
+  NPCId: 9bdda45d-45dc-471f-945f-ee69e374eaff
+  Location:
+    World: world
+    X: -58100.4930501991
+    Y: 75.0
+    Z: 71668.1387912547
+    Yaw: -0.019256592
+    Pitch: 47.549717

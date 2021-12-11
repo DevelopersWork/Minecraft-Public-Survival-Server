@@ -1,188 +1,788 @@
-# Determines how much items are worth on the server.
-# This can be set in this file, or by running the /setworth command.
+# Created by X00LA reassembled to fit newest format from https://github.com/Squawkers13
+# License: GPL2.0 https://github.com/X00LA/Bukkit-Essentials-worth.yml/blob/master/LICENSE
+# Made for MC 1.7.X
+# Optimized for ideal balanced Economy!
+# Report any issues on my Github-Page:
+# https://github.com/X00LA/Bukkit-Essentials-worth.yml
+# Feel free to create a ticket...
+
 worth:
-
-  # Items not listed in this file will not be sellable on the server
-  # Setting the worth to 0 will sell items for free, delete the item or set to -1 to disable.
-
-  # This will set the worth of all logs to '2'
-  # log: 2.0  
-
-  # This will work similar to the above syntax
-  # wool:
-    # '0': 20
-    
-  # This will only allow selling leaves with datavalue '0' and '1'
-  # leaves: 
-    # '0': 1.0
-    # '1': 1.0
-    
-  # This will allow the selling of all, but sells '0' slightly cheaper  
-  # sapling:
-    # '0': 2.0  
-    # '*': 2.5
-
-
-  # stonebutton: 6.0
-  # wood: 0.50
-  # arrow: 3.50
-  # diamondpickaxe: 650.0
-  # rawfish: 5.0
-  # minecart: 23.0
-  # leatherchestplate: 85.0
-  # storageminecart: 30.0
-  # feather: 3.0
-  # goldchestplate: 6.5
-  # mushroomsoup: 4.5
-  # bread: 30.0
-  # stationarywater: 1.0
-  # workbench: 2.5
-  # stonehoe: 2.5
-  # brownmushroom: 2.0
-  # mossycobblestone: 90.0
-  # diamondhoe: 400.0
-  # woodsword: 1.0
-  # torch: 4.0
-  # grass: 1.0
-  # poweredminecart: 32.0
-  # snowball: 1.0
-  # goldenapple: 100.0
-  # leatherleggings: 75.0
-  # diamondaxe: 650.0
-  # slimeball: 50.0
-  # fence: 1.0
-  # stonespade: 1.5
-  # claybrick: 5.0
-  # noteblock: 36.0
-  # ironaxe: 22.0
-  # coalore: 15.0
-  # clayball: 3.0
-  # fishingrod: 10.0
-  # ironhoe: 22.0
-  # goldrecord: 100.0
-  # ironpickaxe: 22.0
-  # irondoor: 22.0
-  # bucket: 22.0
-  # redrose: 2.0
-  # grilledpork: 7.0
-  # gravel: 1.0
-  # wooddoor: 3.0
-  # chainmailhelmet: 40.0
-  # ironchestplate: 22.0
-  # diamondblock: 2000.0
-  # diamondhelmet: 1000.0
-  # goldhelmet: 6.0
-  # redstonetorchon: 32.0
-  # ironspade: 22.0
-  # furnace: 8.5
-  # ironsword: 22.0
-  # dispenser: 58.0
-  # woodaxe: 2.0
-  # seeds: 2.0
-  # painting: 25.0
-  # woodplate: 1.0
-  # redstoneore: 30.0
-  # diamondspade: 210.0
-  # waterbucket: 40.0
-  # water: 1.0
-  # bedrock: 100.0
-  # irondoorblock: 15.0
-  # goldhoe: 6.0
-  # sand: 1.0
-  # goldsword: 6.0
-  # stoneaxe: 3.0
-  # bookshelf: 140.0
-  # ironblock: 190.0
-  # jackolantern: 56.0
-  # boat: 3.0
-  # diamondchestplate: 1750.0
-  # redstonewire: 30.0
-  # redmushroom: 2.0
-  # string: 5.0
-  # stoneplate: 6.0
-  # wallsign: 1.0
-  # cactus: 10.0
-  # sulphur: 20.0
-  # rails: 22.0
-  # ironore: 18.0
-  # leatherhelmet: 52.0
-  # stone: 3.00
-  # egg: 1.0
-  # diamondore: 200.0
-  # woodhoe: 2.0
-  # goldleggings: 6.0
-  # chainmailleggings: 50.0
-  # yellowflower: 2.0
-  # ironhelmet: 22.0
-  # obsidian: 130.0
-  # dirt: 1.0
-  # leather: 10.0
-  # leatherboots: 42.0
-  # lever: 1.0
-  # cobblestone: 1.0
-  # cake: 180.0
-  # woodstairs: 1.0
-  # ironingot: 22.0
-  # goldore: 45.0
-  # pumpkin: 50.0
-  # bed: 68.0
-  # watch: 6.0
-  # ironleggings: 22.0
-  # sign: 1.5
-  # doublestep: 1.0
-  # woodpickaxe: 2.0
-  # stonepickaxe: 4.0
-  # chainmailboots: 30.0
-  # diamondleggings: 1500.0
-  # cookedfish: 7.0
-  # saddle: 100.0
-  # cobblestonestairs: 1.5
-  # tnt: 100.0
-  # glowingredstoneore: 30.0
-  # apple: 10.0
-  # woodspade: 1.0
-  # goldingot: 105.0
-  # diode: 110.0
-  # soil: 1.0
-  # clay: 12.0
-  # goldblock: 450.0
-  # stick: 0.25
-  # paper: 10.0
-  # brick: 21.0
-  # stationarylava: 1.0
-  # chest: 4.0
-  # sandstone: 3.0
-  # goldpickaxe: 6.0
-  # compass: 22.0
-  # sugarcane: 10.0
-  # diamondsword: 420.0
-  # goldboots: 6.0
-  # sponge: 80.0
-  # stonesword: 2.5
-  # coal: 15.0
-  # goldaxe: 6.0
-  # bone: 2.0
-  # diamond: 200.0
-  # glass: 3.00
-  # goldspade: 6.0
-  # lapisblock: 950.0
-  # lavabucket: 40.0
-  # wheat: 9.0
-  # ladder: 0.5
-  # sugarcaneblock: 15.0
-  # bowl: 0.50
-  # chainmailchestplate: 40.0
-  # diamondboots: 850.0
-  # lapisore: 100.0
-  # lava: 25.0
-  # milkbucket: 40.0
-  # redstone: 32.0
-  # greenrecord: 100.0
-  # inksack: 10.0
-  # glowstonedust: 10.0
-  # book: 45.0
-  # bow: 15.0
-  # ironboots: 22.0
-  # step: 1.5
-  # sugar: 10.0
-  bread: 5
+  stone:
+    '0': 3.64
+    '1': 39.19
+    '2': 54.08
+    '3': 33.7
+    '4': 46.51
+    '5': 24.16
+    '6': 33.35
+  grass:
+    '0': 1.32
+  dirt:
+    '0': 0.4
+    '1': 1.32
+    '2': 3.3
+  cobblestone:
+    '0': 1.32
+  wood:
+    '0': 4.55
+    '1': 4.55
+    '2': 4.55
+    '3': 4.55
+    '4': 4.55
+    '5': 4.55
+  sand:
+    '0': 0.66
+    '1': 1.98
+  gravel:
+    '0': 0.66
+  gold_ore:
+    '0': 66.0
+  goldore:
+    '0': 66.0
+  ironore:
+    '0': 19.8
+  coalore:
+    '0': 13.2
+  log:
+    '0': 13.2
+    '1': 13.2
+    '2': 13.2
+    '3': 13.2
+    '4': 13.2
+    '5': 13.2
+  log2:
+    '0': 13.2
+    '1': 13.2
+  leaves:
+    '0': 2.64
+    '1': 2.64
+    '2': 2.64
+    '3': 2.64
+    '4': 2.64
+    '5': 2.64
+  glass:
+    '0': 2.73
+  lapisore:
+    '0': 26.4
+  lapisblock:
+    '0': 49.18
+  dispenser:
+    '0': 47.48
+  sandstone:
+    '0': 3.64
+    '1': 6.94
+    '2': 5.03
+  noteblock:
+    '0': 55.74
+  poweredrail:
+    '0': 129.84
+  detectorrail:
+    '0': 43.44
+  pistonstickybase:
+    '0': 117.34
+  web:
+    '0': 2.97
+  longgrass:
+    '1': 0.01
+    '2': 0.01
+  deadbush:
+    '0': 0.01
+  pistonbase:
+    '0': 71.83
+  wool:
+    '0': 6.6
+    '1': 10.84
+    '2': 14.9
+    '3': 15.77
+    '4': 10.36
+    '5': 22.41
+    '6': 12.87
+    '7': 15.77
+    '8': 15.33
+    '9': 23.29
+    '10': 13.75
+    '11': 14.57
+    '12': 18.22
+    '13': 24.19
+    '14': 10.36
+    '15': 14.57
+  yellowflower:
+    '0': 1.32
+  redrose:
+    '0': 1.32
+    '1': 3.3
+    '2': 6.6
+    '3': 2.31
+    '4': 2.31
+    '5': 2.31
+    '6': 2.31
+    '7': 2.31
+    '8': 1.98
+  brownmushroom:
+    '0': 1.98
+  redmushroom:
+    '0': 1.98
+  goldblock:
+    '0': 1153.84
+  ironblock:
+    '0': 361.99
+  step:
+    '0': 2.51
+    '1': 2.51
+    '3': 0.91
+    '4': 27.75
+    '5': 3.47
+    '6': 41.63
+    '7': 87.98
+  brick:
+    '0': 40.22
+  tnt:
+    '0': 94.72
+  bookshelf:
+    '0': 144.34
+  mossycobblestone:
+    '0': 66.0
+  torch:
+    '0': 4.73
+  woodstairs:
+    '0': 9.43
+  chest:
+    '0': 50.28
+  diamondore:
+    '0': 666.6
+  diamondblock:
+    '0': 8197.2
+  workbench:
+    '0': 25.14
+  furnace:
+    '0': 14.57
+  ladder:
+    '0': 10.12
+  rails:
+    '0': 15.36
+  cobblestonestairs:
+    '0': 2.73
+  lever:
+    '0': 6.16
+  stoneplate:
+    '0': 10.06
+  woodplate:
+    '0': 12.57
+  redstoneore:
+    '0': 19.8
+  redstonetorchon:
+    '0': 9.8
+  stonebutton:
+    '0': 10.06
+  ice:
+    '0': 9.24
+  snowball:
+    '0': 1.32
+  cactus:
+    '0': 6.6
+  clayball:
+    '0': 3.96
+  jukebox:
+    '0': 961.08
+  fence:
+    '0': 13.01
+  pumpkin:
+    '0': 13.2
+  netherrack:
+    '0': 6.6
+  soulsand:
+    '0': 13.2
+  glowstone:
+    '0': 58.29
+  jackolantern:
+    '0': 24.74
+  stainedglass:
+    '0': 4.29
+    '1': 3.99
+    '2': 4.49
+    '3': 4.6
+    '4': 3.93
+    '5': 5.43
+    '6': 4.24
+    '7': 4.6
+    '8': 4.55
+    '9': 5.54
+    '10': 4.35
+    '11': 4.45
+    '12': 4.91
+    '13': 5.66
+    '14': 3.93
+    '15': 4.45
+  trapdoor:
+    '0': 18.85
+  smoothbrick:
+    '0': 5.03
+    '1': 16.05
+    '2': 3.96
+    '3': 13.2
+  hugemushroom1:
+    '0': 2.64
+  hugemushroom2:
+    '0': 2.64
+  ironfence:
+    '0': 15.08
+  thinglass:
+    '0': 1.41
+  melonblock:
+    '0': 24.59
+  vine:
+    '0': 6.6
+  fencegate:
+    '0': 29.91
+  brickstairs:
+    '0': 83.26
+  smoothstairs:
+    '0': 10.41
+  mycel:
+    '0': 13.2
+  waterlily:
+    '0': 3.96
+  netherbrickitem:
+    '0': 10.93
+  netherfence:
+    '0': 124.89
+  netherbrickstairs:
+    '0': 124.89
+  enchantmenttable:
+    '0': 2221.47
+  enderstone:
+    '0': 13.2
+  dragonegg:
+    '0': 1320.0
+  redstonelampoff:
+    '0': 102.3
+  woodstep:
+    '0': 3.14
+    '1': 3.14
+    '2': 3.14
+    '3': 3.14
+    '4': 3.14
+    '5': 3.14
+  sandstonestairs:
+    '0': 1.37
+  emeraldore:
+    '0': 72.6
+  enderchest:
+    '0': 1326.28
+  tripwirehook:
+    '0': 25.42
+  emeraldblock:
+    '0': 498.02
+  sprucewoodstairs:
+    '0': 9.43
+  birchwoodstairs:
+    '0': 9.43
+  junglewoodstairs:
+    '0': 9.43
+  beacon:
+    '0': 747.49
+  cobblewall:
+    '0': 1.82
+    '1': 15.08
+  woodbutton:
+    '0': 6.28
+  anvil:
+    '0': 1659.52
+    '1': 872.75
+    '2': 436.37
+  trappedchest:
+    '0': 104.46
+  goldplate:
+    '0': 256.41
+  ironplate:
+    '0': 80.44
+  daylightdetector:
+    '0': 119.96
+  redstoneblock:
+    '0': 49.18
+  quartzore:
+    '0': 26.4
+  hopper:
+    '0': 270.49
+  quartzblock:
+    '0': 127.51
+    '1': 242.83
+    '2': 175.97
+  quartzstairs:
+    '0': 263.95
+  activatorrail:
+    '0': 43.92
+  dropper:
+    '0': 12.75
+  stainedclay:
+    '0': 44.67
+    '1': 44.36
+    '2': 44.87
+    '3': 44.98
+    '4': 44.3
+    '5': 45.8
+    '6': 44.61
+    '7': 44.98
+    '8': 44.92
+    '9': 45.91
+    '10': 44.72
+    '11': 44.83
+    '12': 45.28
+    '13': 46.03
+    '14': 44.3
+    '15': 33.83
+  stainedglasspane:
+    '0': 2.22
+    '1': 2.06
+    '2': 2.33
+    '3': 2.38
+    '4': 2.03
+    '5': 2.81
+    '6': 2.19
+    '7': 2.38
+    '8': 2.35
+    '9': 2.87
+    '10': 2.25
+    '11': 2.3
+    '12': 2.54
+    '13': 2.93
+    '14': 2.03
+    '15': 2.3
+  acaciastairs:
+    '0': 27.32
+  darkoakstairs:
+    '0': 27.32
+  carpet:
+    '0': 18.22
+    '1': 29.93
+    '2': 41.13
+    '3': 43.53
+    '4': 28.61
+    '5': 61.84
+    '6': 35.51
+    '7': 43.52
+    '8': 42.31
+    '9': 64.27
+    '10': 37.94
+    '11': 40.22
+    '12': 50.28
+    '13': 66.77
+    '14': 28.61
+    '15': 40.22
+  hardclay:
+    '0': 31.99
+  coalblock:
+    '0': 131.16
+  packedice:
+    '0': 19.8
+  doubleplant:
+    '0': 3.96
+    '1': 3.3
+    '2': 0.01
+    '3': 0.01
+    '4': 1.32
+    '5': 1.32
+  ironspade:
+    '0': 48.89
+  ironpickaxe:
+    '0': 129.34
+  ironaxe:
+    '0': 129.34
+  flintandsteel:
+    '0': 42.04
+  apple:
+    '0': 3.96
+  bow:
+    '0': 21.21
+  arrow:
+    '0': 1.77
+  coal:
+    '0': 10.56
+    '1': 20.04
+  diamond:
+    '0': 660.0
+  ironingot:
+    '0': 29.15
+  goldingot:
+    '0': 92.9
+  ironsword:
+    '0': 84.78
+  woodsword:
+    '0': 16.91
+  woodspade:
+    '0': 14.96
+  woodpickaxe:
+    '0': 27.53
+  woodaxe:
+    '0': 25.53
+  stonesword:
+    '0': 7.98
+  stonespade:
+    '0': 14.96
+  stonepickaxe:
+    '0': 14.14
+  stoneaxe:
+    '0': 14.14
+  diamondsword:
+    '0': 1825.94
+  diamondspade:
+    '0': 919.47
+  diamondpickaxe:
+    '0': 2741.07
+  diamondaxe:
+    '0': 2741.07
+  stick:
+    '0': 3.14
+  bowl:
+    '0': 4.71
+  mushroomsoup:
+    '0': 11.06
+  goldsword:
+    '0': 260.47
+  goldspade:
+    '0': 136.88
+  goldpickaxe:
+    '0': 393.29
+  goldaxe:
+    '0': 393.29
+  string:
+    '0': 1.98
+  feather:
+    '0': 0.66
+  sulphur:
+    '0': 13.2
+  woodhoe:
+    '0': 21.24
+  stonehoe:
+    '0': 12.32
+  ironhoe:
+    '0': 89.11
+  diamondhoe:
+    '0': 1830.27
+  goldhoe:
+    '0': 265.08
+  seeds:
+    '0': 1.32
+  wheat:
+    '0': 3.96
+  bread:
+    '0': 16.39
+  leatherhelmet:
+    '0': 76.08
+  leatherchestplate:
+    '0': 121.72
+  leatherleggings:
+    '0': 106.51
+  leatherboots:
+    '0': 60.86
+  chainmailhelmet:
+    '0': 142.83
+  chainmailchestplate:
+    '0': 228.53
+  chainmailleggings:
+    '0': 199.96
+  chainmailboots:
+    '0': 114.26
+  ironhelmet:
+    '0': 201.1
+  ironchestplate:
+    '0': 321.77
+  ironleggings:
+    '0': 281.55
+  ironboots:
+    '0': 160.88
+  diamondhelmet:
+    '0': 4554.0
+  diamondchestplate:
+    '0': 7286.4
+  diamondleggings:
+    '0': 6375.6
+  diamondboots:
+    '0': 3643.2
+  goldhelmet:
+    '0': 641.02
+  goldchestplate:
+    '0': 1025.63
+  goldleggings:
+    '0': 897.43
+  goldboots:
+    '0': 512.82
+  flint:
+    '0': 1.32
+  pork:
+    '0': 9.9
+  grilledpork:
+    '0': 25.48
+  painting:
+    '0': 43.8
+  goldenapple:
+    '0': 162.73
+    '1': 12743.83
+  sign:
+    '0': 14.01
+  wooddoor:
+    '0': 37.71
+  bucket:
+    '0': 120.66
+  waterbucket:
+    '0': 72.6
+  lavabucket:
+    '0': 168.96
+  minecart:
+    '0': 201.1
+  saddle:
+    '0': 132.0
+  irondoor:
+    '0': 241.33
+  redstone:
+    '0': 3.96
+  boat:
+    '0': 31.42
+  leather:
+    '0': 13.2
+  milkbucket:
+    '0': 72.6
+  claybrick:
+    '0': 7.29
+  sugarcane:
+    '0': 1.32
+  paper:
+    '0': 1.82
+  book:
+    '0': 25.76
+  slimeball:
+    '0': 13.2
+  storageminecart:
+    '0': 346.91
+  poweredminecart:
+    '0': 297.63
+  egg:
+    '0': 0.66
+  compass:
+    '0': 327.23
+  fishingrod:
+    '0': 18.47
+  watch:
+    '0': 518.28
+  glowstonedust:
+    '0': 10.56
+  rawfish:
+    '0': 3.96
+    '1': 4.29
+    '2': 1.98
+    '3': 6.6
+  cookedfish:
+    '0': 7.29
+    '1': 7.74
+    '2': 4.55
+    '3': 10.93
+  inksack:
+    '0': 3.96
+    '1': 0.91
+    '2': 10.93
+    '3': 6.6
+    '4': 3.96
+    '5': 3.36
+    '6': 10.27
+    '7': 4.51
+    '8': 4.83
+    '9': 2.72
+    '10': 9.64
+    '11': 0.91
+    '12': 4.83
+    '13': 4.2
+    '14': 1.26
+    '15': 3.04
+  bone:
+    '0': 6.6
+  sugar:
+    '0': 1.82
+  cake:
+    '0': 322.9
+  bed:
+    '0': 46.18
+  diode:
+    '0': 47.6
+  cookie:
+    '0': 20.04
+  map:
+    '0': 6.6
+  shears:
+    '0': 80.44
+  pumpkinseeds:
+    '0': 19.8
+  melonseeds:
+    '0': 19.8
+  cookedbeef:
+    '0': 15.48
+  rawchicken:
+    '0': 6.6
+  cookedchicken:
+    '0': 10.93
+  rottenflesh:
+    '0': 1.32
+  enderpearl:
+    '0': 66.0
+  blazerod:
+    '0': 132.0
+  ghasttear:
+    '0': 99.0
+  goldnugget:
+    '0': 14.24
+  netherstalk:
+    '0': 33.0
+  potion:
+    '0': 15.61
+    '16': 67.08
+    '32': 36.12
+    '64': 27.01
+    '8193': 229.19
+    '8194': 15.09
+    '8195': 158.77
+    '8196': 98.04
+    '8197': 123.47
+    '8198': 312.11
+    '8200': 36.32
+    '8201': 218.26
+    '8202': 233.89
+    '8204': 150.08
+    '8205': 101.68
+    '8206': 445.5
+    '8225': 330.86
+    '8226': 145.79
+    '8228': 149.87
+    '8229': 184.97
+    '8233': 315.78
+    '8236': 221.68
+    '8257': 321.75
+    '8258': 136.69
+    '8259': 224.57
+    '8260': 140.67
+    '8262': 436.18
+    '8264': 52.05
+    '8265': 306.67
+    '8266': 324.69
+    '8269': 145.79
+    '8270': 620.25
+    '16385': 334.5
+    '16386': 149.44
+    '16387': 237.32
+    '16388': 153.51
+    '16389': 188.61
+    '16390': 448.93
+    '16392': 68.34
+    '16393': 319.42
+    '16394': 340.98
+    '16396': 225.32
+    '16397': 158.54
+    '16398': 663.0
+    '16417': 474.8
+    '16418': 219.41
+    '16420': 225.03
+    '16421': 273.47
+    '16425': 453.99
+    '16428': 324.13
+    '16449': 462.24
+    '16450': 206.84
+    '16451': 328.12
+    '16452': 212.46
+    '16454': 620.14
+    '16456': 90.05
+    '16457': 441.42
+    '16458': 466.28
+    '16461': 158.74
+    '16462': 874.16
+  glassbottle:
+    '0': 11.31
+  spidereye:
+    '0': 3.96
+  fermentedspidereye:
+    '0': 10.71
+  blazepowder:
+    '0': 91.08
+  magmacream:
+    '0': 47.97
+  brewingstanditem:
+    '0': 187.62
+  cauldronitem:
+    '0': 281.55
+  eyeofender:
+    '0': 216.77
+  speckledmelon:
+    '0': 22.39
+  fireball:
+    '0': 158.48
+  bookandquill:
+    '0': 41.92
+  emerald:
+    '0': 66.0
+  itemframe:
+    '0': 52.91
+  flowerpotitem:
+    '0': 30.17
+  carrotitem:
+    '0': 1.32
+  potatoitem:
+    '0': 0.66
+  bakedpotato:
+    '0': 2.73
+  poisonouspotato:
+    '0': 0.33
+  emptymap:
+    '0': 471.69
+  goldencarrot:
+    '0': 159.09
+  skullitem:
+    '1': 66.0
+  carrotstick:
+    '0': 27.32
+  netherstar:
+    '0': 330.0
+  pumpkinpie:
+    '0': 21.64
+  firework:
+    '0': 246.99
+  fireworkcharge:
+    '0': 101.75
+  redstonecomparator:
+    '0': 952.4
+  quartz:
+    '0': 23.1
+  explosiveminecart:
+    '0': 408.24
+  hopperminecart:
+    '0': 650.79
+  ironbarding:
+    '0': 158.4
+  goldbarding:
+    '0': 462.0
+  diamondbarding:
+    '0': 3960.0
+  leash:
+    '0': 14.57
+  nametag:
+    '0': 66.0
+  goldrecord:
+    '0': 132.0
+  greenrecord:
+    '0': 132.0
+  record3:
+    '0': 132.0
+  record4:
+    '0': 132.0
+  record5:
+    '0': 132.0
+  record6:
+    '0': 132.0
+  record7:
+    '0': 132.0
+  record8:
+    '0': 132.0
+  record9:
+    '0': 132.0
+  record10:
+    '0': 132.0
+  record11:
+    '0': 132.0
+  record12:
+    '0': 132.0

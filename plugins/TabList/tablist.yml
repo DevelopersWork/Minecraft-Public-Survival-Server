@@ -28,7 +28,7 @@ blacklisted-players:
 
 # Tab update time interval. (In ticks!)
 # Set to 0 to disable tab refreshing.
-interval: 4
+interval: 6
 
 # Define if the header & footer should be randomized.
 # Animation placeholders won't be affected.
@@ -50,9 +50,9 @@ footer:
 - "&r"
 - "&r"
 - "&7<28> %anim:follow% &5&lTwitch &7 <28>"
-# - "&7<28> %anim:ip%&7:&2 crafterswork.developerswork.online&7 <28>"
 - "&7<28> &d twitch.tv/developerswork&7 <28>"
 - "&0&m============================================"
+- "&7<28> %anim:ip%&7&r <28>"
 
 # Defines per world tablist for different worlds
 # You can separate worlds with ", " to show tablist in that worlds

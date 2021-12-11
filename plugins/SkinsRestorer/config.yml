@@ -26,13 +26,13 @@
 
 # If true, players can change skins without permission.
 # see https://github.com/SkinsRestorer/SkinsRestorerX/wiki/cmds-&-perms for perms.
-SkinWithoutPerm: true
+SkinWithoutPerm: false
 
 # Players cooldown when changing skins (set to 0 to disable).
 # SkinErrorCooldown when a error or invalid url occurs.
 # Can be bypassed with 'skinsrestorer.bypasscooldown'.
-SkinChangeCooldown: 300
-SkinErrorCooldown: 69
+SkinChangeCooldown: 600
+SkinErrorCooldown: 90
 
   #################
 # Customization #
@@ -54,12 +54,18 @@ DisablePrefix: false
 # [!] url.png won't work on join for bungee, see https://github.com/SkinsRestorer/SkinsRestorerX/issues/315 [!]
 DefaultSkins:
   Enabled: true
-  ApplyForPremium: false
+  ApplyForPremium: true
   Names:
     - "creeper"
     - "zombie"
     - "endermen"
     - "crafter"
+    - "dream"
+    - "thirtyvirus"
+    - "mrbeast3000"
+    - "karl"
+    - "pigmen"
+    - "sapnap"
 
 # Skins in this list will be disabled, so users can't set them.
 # Can be bypassed with 'skinsrestorer.bypassdisabled'.
@@ -90,7 +96,7 @@ CustomGUI:
 PerSkinPermissions: false
 
 # Time that skins are stored in the database before we request again (in minutes).
-SkinExpiresAfter: 15
+SkinExpiresAfter: 60
 
 # Multi-Bungee support
 # Enable this if you have issues with skins in multi-proxy environments.

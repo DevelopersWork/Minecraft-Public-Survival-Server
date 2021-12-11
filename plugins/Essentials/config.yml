@@ -85,17 +85,17 @@ force-safe-teleport-location: false
 # If a player has any passengers, the teleport will fail. Should their passengers be dismounted before they are teleported?
 # If this is set to true, Essentials will dismount the player's passengers before teleporting.
 # If this is set to false, attempted teleports will be canceled with a warning.
-teleport-passenger-dismount: true
+teleport-passenger-dismount: false
 
 # The delay, in seconds, required between /home, /tp, etc.
-teleport-cooldown: 90
+teleport-cooldown: 15
 
 # The delay, in seconds, before a user actually teleports. If the user moves or gets attacked in this timeframe, the teleport is cancelled.
 teleport-delay: 3
 
 # The delay, in seconds, a player can't be attacked by other players after they have been teleported by a command.
 # This will also prevent the player attacking other players.
-teleport-invulnerability: 8
+teleport-invulnerability: 30
 
 # Whether to make all teleportations go to the center of the block; where the x and z coordinates decimal become .5
 teleport-to-center: true
@@ -452,7 +452,7 @@ unsafe-enchantments: false
 
 #Do you want Essentials to keep track of previous location for /back in the teleport listener?
 #If you set this to true any plugin that uses teleport will have the previous location registered.
-register-back-in-listener: false
+register-back-in-listener: true
 
 #Delay to wait before people can cause attack damage after logging in.
 login-attack-delay: 30
@@ -614,7 +614,7 @@ compass-towards-home-perm: false
 spawn-if-no-home: true
 
 # Should players be asked to provide confirmation for homes which they attempt to overwrite?
-confirm-home-overwrite: false
+confirm-home-overwrite: true
 
 ############################################################
 # +------------------------------------------------------+ #
@@ -711,18 +711,18 @@ chat:
   # Users with essentials.chat.shout can override this by prefixing their message with an exclamation mark (!)
   # Users with essentials.chat.question can override this by prefixing their message with a question mark (?)
   # You can add command costs for shout/question by adding chat-shout and chat-question to the command costs section.
-  radius: 16
+  radius: 48
 
   # Chat formatting can be done in two ways, you can either define a standard format for all chat.
   # Or you can give a group specific chat format, to give some extra variation.
   # For more information of chat formatting, check out the wiki: http://wiki.ess3.net/wiki/Chat_Formatting
   # Note: Using the {PREFIX} and {SUFFIX} placeholders along with {DISPLAYNAME} may cause double prefixes/suffixes to be shown in chat unless add-prefix-suffix is uncommented and set to false.
 
-  format: '{PREFIX} {DISPLAYNAME} {SUFFIX} &r&f»&r&f {MESSAGE}'
+  format: '{PREFIX}{DISPLAYNAME}{SUFFIX} &r&f&l»&r&f {MESSAGE}'
   #format: '&7[{GROUP}]&r {DISPLAYNAME}&7:&r {MESSAGE}'
   #format: '&7{PREFIX}&r {DISPLAYNAME}&r &7{SUFFIX}&r: {MESSAGE}'
 
-  group-formats: '&c[{GROUP}]&r {DISPLAYNAME} &r&f»&r&f {MESSAGE}'
+  group-formats: '&c[{GROUP}]&r {DISPLAYNAME} &r&f&l»&r&f {MESSAGE}'
   #  default: '{WORLDNAME} {DISPLAYNAME}&7:&r {MESSAGE}'
   #  admins: '{WORLDNAME} &c[{GROUP}]&r {DISPLAYNAME}&7:&c {MESSAGE}'
 
@@ -944,12 +944,12 @@ newbies:
 
   # When we spawn for the first time, which spawnpoint do we use?
   # Set to "none" if you want to use the spawn point of the world.
-  spawnpoint: none
+  spawnpoint: spawn
 
   # Do we want to give users anything on first join? Set to '' to disable
   # This kit will be given regardless of cost and permissions, and will not trigger the kit delay.
-  #kit: ''
-  kit: tools
+  kit: ''
+  # kit: tools
 
 # What priority should we use for handling respawns?
 # Set this to none, if you want vanilla respawning behaviour.
@@ -970,7 +970,7 @@ respawn-at-home: true
 respawn-at-anchor: true
 
 # Teleport all joining players to the spawnpoint
-spawn-on-join: true
+spawn-on-join: false
 # The following value of `guests` states that all players in group `guests` will be teleported to spawn when joining.
 #spawn-on-join: guests
 # The following list value states that all players in group `guests` and `admin` are to be teleported to spawn when joining. 
