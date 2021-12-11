@@ -12,6 +12,7 @@
 
 config-version: 12
 settings:
+  log-named-deaths: true
   debug: false
   bungeecord: false
   sample-count: 12
@@ -59,9 +60,10 @@ commands:
   - tellraw
   log: true
   tab-complete: 0
-  send-namespaced: true
+  send-namespaced: false
 world-settings:
   default:
+    thunder-chance: 100000
     verbose: false
     hopper-amount: 1
     dragon-death-sound-radius: 0
@@ -161,3 +163,5 @@ world-settings:
       monsters: 48
       misc: 32
       other: 64
+  worldeditregentempworld:
+    verbose: false

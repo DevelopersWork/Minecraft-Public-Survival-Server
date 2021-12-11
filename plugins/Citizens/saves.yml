@@ -1,0 +1,127 @@
+# Citizens NPC Storage
+
+
+
+last-created-npc-id: 4
+npc:
+  '0':
+    name: §6badboy123
+    uuid: 96ae51f3-d442-4131-8608-24e11dc516de
+    traits:
+      type: PLAYER
+      location:
+        bodyYaw: -5.5499268
+        world: world
+        x: '-58116.6257'
+        y: '75.0'
+        z: '71667.6184'
+        yaw: '-5.5499'
+        pitch: '46.6494'
+      sneak:
+        sneaking: false
+      skintrait:
+        fetchDefaultSkin: true
+        skinName: badboy123
+        updateSkins: true
+        signature: jsAGsb26Tq5y+Dwox6iKWRNUuhQenjNc3CpuLr23VYcthfHNs+oxu+aR/jPrRzYIBFELGz2WkDwgTnklehbPbHZB1Q02EP4cXcsFrhnzQDwDkzOg9weKLg9Dr3Y64iZkdaar/ZH8KWLs4RYeRk2AhmRWIl+TZrucY6Y/QP40uzMkP/dcuLd7djadLsrP8J8tCMlbzpfm7RLWlam/7MFCF55CjUmF3QvKU4Fj6xl8b7H5EPmjxurlQXaakZpzY3o/3gP00GUprCMNMPpkUykRYS6cp4ddQ3Gc6pEtPNd/I/1Dzy9wXDpzLxGHHf3QFu63mQQBSnDM0UAdY3KHc8H2r5uJcL5Cw7APqdGKOgPayyJTHcoX/5U8Nk0JO6kH7yV7QjSCbUse0XQdRTkcO7WSUKqWIBu+yM/hD9gP47Kp8RMTjFMc7yyh5f20QddaTSVCxPOoNxVc8Olpv0ye+GhYV+x7dVDeYixmQVFFwMnypeA1Jju96alpUfM3P9MQDpwubgSqd7PTViBZo0Q1saTY7UfLYQHI13Mc304+UN5Km4d91xU2SOhfsSRNS96/DHT7bvrw68cy0DWQl728TBn1EjEIFM886wj1WlJtrk1x8WuUgoNOTzvTKuoiS84V8RiUHtR+HiHmOBmN4dGnjIoymju2UK4g29LmvWAUpo6cYvM=
+        textureRaw: ewogICJ0aW1lc3RhbXAiIDogMTYzOTIxMDAyNDgyMiwKICAicHJvZmlsZUlkIiA6ICI3YjFmOTE5MDA2NGU0MWE3OWVjOWRkMmJiMTcwNjY5NCIsCiAgInByb2ZpbGVOYW1lIiA6ICJCYWRib3kxMjMiLAogICJzaWduYXR1cmVSZXF1aXJlZCIgOiB0cnVlLAogICJ0ZXh0dXJlcyIgOiB7CiAgICAiU0tJTiIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjEyN2I3YjNhNTU4NWRiZGE1YWUzNGM2MjIxNzRiYTI0MjA1NTE5N2Y2NTdjMzAxYmY4Y2IxYWMyNTg5ZDAyNiIsCiAgICAgICJtZXRhZGF0YSIgOiB7CiAgICAgICAgIm1vZGVsIiA6ICJzbGltIgogICAgICB9CiAgICB9CiAgfQp9
+      spawned: false
+      owner:
+        uuid: ''
+    traitnames: mounttrait,type,location,sneak,equipment,scoreboardtrait,skintrait,spawned,inventory,owner
+    navigator:
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    metadata:
+      protected: true
+      cached-skin-uuid-name: badboy123
+      cached-skin-uuid: 7b1f9190-064e-41a7-9ec9-dd2bb1706694
+  '1':
+    name: §6badboy123
+    uuid: 3482cf34-6d12-45e2-a013-a4b6df447a17
+    traits:
+      type: PLAYER
+      location:
+        bodyYaw: -3.8944397
+        world: world
+        x: '-58116.5894'
+        y: '75.0'
+        z: '71667.6399'
+        yaw: '-3.8944'
+        pitch: '45.7494'
+      sneak:
+        sneaking: false
+      skintrait:
+        fetchDefaultSkin: true
+        signature: jsAGsb26Tq5y+Dwox6iKWRNUuhQenjNc3CpuLr23VYcthfHNs+oxu+aR/jPrRzYIBFELGz2WkDwgTnklehbPbHZB1Q02EP4cXcsFrhnzQDwDkzOg9weKLg9Dr3Y64iZkdaar/ZH8KWLs4RYeRk2AhmRWIl+TZrucY6Y/QP40uzMkP/dcuLd7djadLsrP8J8tCMlbzpfm7RLWlam/7MFCF55CjUmF3QvKU4Fj6xl8b7H5EPmjxurlQXaakZpzY3o/3gP00GUprCMNMPpkUykRYS6cp4ddQ3Gc6pEtPNd/I/1Dzy9wXDpzLxGHHf3QFu63mQQBSnDM0UAdY3KHc8H2r5uJcL5Cw7APqdGKOgPayyJTHcoX/5U8Nk0JO6kH7yV7QjSCbUse0XQdRTkcO7WSUKqWIBu+yM/hD9gP47Kp8RMTjFMc7yyh5f20QddaTSVCxPOoNxVc8Olpv0ye+GhYV+x7dVDeYixmQVFFwMnypeA1Jju96alpUfM3P9MQDpwubgSqd7PTViBZo0Q1saTY7UfLYQHI13Mc304+UN5Km4d91xU2SOhfsSRNS96/DHT7bvrw68cy0DWQl728TBn1EjEIFM886wj1WlJtrk1x8WuUgoNOTzvTKuoiS84V8RiUHtR+HiHmOBmN4dGnjIoymju2UK4g29LmvWAUpo6cYvM=
+        skinName: badboy123
+        textureRaw: ewogICJ0aW1lc3RhbXAiIDogMTYzOTIxMDAyNDgyMiwKICAicHJvZmlsZUlkIiA6ICI3YjFmOTE5MDA2NGU0MWE3OWVjOWRkMmJiMTcwNjY5NCIsCiAgInByb2ZpbGVOYW1lIiA6ICJCYWRib3kxMjMiLAogICJzaWduYXR1cmVSZXF1aXJlZCIgOiB0cnVlLAogICJ0ZXh0dXJlcyIgOiB7CiAgICAiU0tJTiIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjEyN2I3YjNhNTU4NWRiZGE1YWUzNGM2MjIxNzRiYTI0MjA1NTE5N2Y2NTdjMzAxYmY4Y2IxYWMyNTg5ZDAyNiIsCiAgICAgICJtZXRhZGF0YSIgOiB7CiAgICAgICAgIm1vZGVsIiA6ICJzbGltIgogICAgICB9CiAgICB9CiAgfQp9
+        updateSkins: true
+      spawned: false
+      owner:
+        uuid: ''
+    traitnames: mounttrait,type,location,sneak,equipment,scoreboardtrait,skintrait,spawned,inventory,owner
+    navigator:
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    metadata:
+      cached-skin-uuid: 7b1f9190-064e-41a7-9ec9-dd2bb1706694
+      protected: true
+      cached-skin-uuid-name: badboy123
+      player-skin-name: badboy123
+  '2':
+    name: shop_3
+    uuid: 857a6985-7d4e-4ecd-92c5-035c123c7b23
+    traits:
+      type: PLAYER
+    traitnames: mounttrait,type
+    navigator:
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+  '3':
+    name: §6badboy123
+    uuid: 5f8e2d94-7127-4dea-b1c5-3c65bc11e80e
+    traits:
+      type: PLAYER
+      location:
+        bodyYaw: 175.9342
+        world: world
+        x: '-58108.4078'
+        y: '75.0'
+        z: '71680.3486'
+        yaw: '175.9342'
+        pitch: '65.5497'
+      sneak:
+        sneaking: false
+      skintrait:
+        fetchDefaultSkin: true
+        signature: jsAGsb26Tq5y+Dwox6iKWRNUuhQenjNc3CpuLr23VYcthfHNs+oxu+aR/jPrRzYIBFELGz2WkDwgTnklehbPbHZB1Q02EP4cXcsFrhnzQDwDkzOg9weKLg9Dr3Y64iZkdaar/ZH8KWLs4RYeRk2AhmRWIl+TZrucY6Y/QP40uzMkP/dcuLd7djadLsrP8J8tCMlbzpfm7RLWlam/7MFCF55CjUmF3QvKU4Fj6xl8b7H5EPmjxurlQXaakZpzY3o/3gP00GUprCMNMPpkUykRYS6cp4ddQ3Gc6pEtPNd/I/1Dzy9wXDpzLxGHHf3QFu63mQQBSnDM0UAdY3KHc8H2r5uJcL5Cw7APqdGKOgPayyJTHcoX/5U8Nk0JO6kH7yV7QjSCbUse0XQdRTkcO7WSUKqWIBu+yM/hD9gP47Kp8RMTjFMc7yyh5f20QddaTSVCxPOoNxVc8Olpv0ye+GhYV+x7dVDeYixmQVFFwMnypeA1Jju96alpUfM3P9MQDpwubgSqd7PTViBZo0Q1saTY7UfLYQHI13Mc304+UN5Km4d91xU2SOhfsSRNS96/DHT7bvrw68cy0DWQl728TBn1EjEIFM886wj1WlJtrk1x8WuUgoNOTzvTKuoiS84V8RiUHtR+HiHmOBmN4dGnjIoymju2UK4g29LmvWAUpo6cYvM=
+        skinName: badboy123
+        textureRaw: ewogICJ0aW1lc3RhbXAiIDogMTYzOTIxMDAyNDgyMiwKICAicHJvZmlsZUlkIiA6ICI3YjFmOTE5MDA2NGU0MWE3OWVjOWRkMmJiMTcwNjY5NCIsCiAgInByb2ZpbGVOYW1lIiA6ICJCYWRib3kxMjMiLAogICJzaWduYXR1cmVSZXF1aXJlZCIgOiB0cnVlLAogICJ0ZXh0dXJlcyIgOiB7CiAgICAiU0tJTiIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjEyN2I3YjNhNTU4NWRiZGE1YWUzNGM2MjIxNzRiYTI0MjA1NTE5N2Y2NTdjMzAxYmY4Y2IxYWMyNTg5ZDAyNiIsCiAgICAgICJtZXRhZGF0YSIgOiB7CiAgICAgICAgIm1vZGVsIiA6ICJzbGltIgogICAgICB9CiAgICB9CiAgfQp9
+        updateSkins: true
+      spawned: false
+      owner:
+        uuid: ''
+    traitnames: mounttrait,type,location,sneak,equipment,scoreboardtrait,skintrait,spawned,inventory,owner
+    navigator:
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+    metadata:
+      cached-skin-uuid: 7b1f9190-064e-41a7-9ec9-dd2bb1706694
+      protected: true
+      cached-skin-uuid-name: badboy123
+      player-skin-name: badboy123
+  '4':
+    name: shop_5
+    uuid: 9bdda45d-45dc-471f-945f-ee69e374eaff
+    traits:
+      type: PLAYER
+    traitnames: mounttrait,type
+    navigator:
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true

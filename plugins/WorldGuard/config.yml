@@ -13,7 +13,7 @@ regions:
         table-prefix: ''
     use-paper-entity-origin: false
     enable: true
-    invincibility-removes-mobs: false
+    invincibility-removes-mobs: true
     cancel-chat-without-recipients: true
     nether-portal-protection: true
     fake-player-build-override: true

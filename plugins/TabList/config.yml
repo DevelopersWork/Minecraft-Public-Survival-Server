@@ -132,7 +132,7 @@ change-prefix-suffix-in-tablist:
 
   # Automatically add groups from another plugins to the tablist groups.yml on every reload?
   # If a plugin does not support Vault, it will not be added.
-  sync-plugins-groups-with-tablist: false
+  sync-plugins-groups-with-tablist: true
 
   # Hide player's group in player list when the player is vanished?
   # Requires Essentials, SuperVanish, PremiumVanish or CMI plugin!
@@ -140,7 +140,7 @@ change-prefix-suffix-in-tablist:
 
   # Hide player's group in player list when the player is AFK?
   # Requires Essentials or CMI plugin!
-  hide-group-when-player-afk: false
+  hide-group-when-player-afk: true
 
   # Do you want to assign global group to normal groups?
   # true - "globalGroupPrefix + normalGroupPrefix"
@@ -150,7 +150,7 @@ change-prefix-suffix-in-tablist:
   # Prefer player's primary Vault group when assigning tablist group from groups.yml?
   # true - player will be assigned their primary vault group where possible
   # false - applies the group that has the higher priority in the permission plugin
-  prefer-primary-vault-group: false
+  prefer-primary-vault-group: true
 
   # Refresh interval in server ticks.
   # Set to 0 if you don't want to refresh the groups.
